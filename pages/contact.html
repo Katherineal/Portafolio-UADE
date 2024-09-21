@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio - Katherine Alzamora</title>
+        <title>Contacto - Katherine Alzamora</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="../styles/styles.css">
     </head>
     <body>
         <header>
@@ -29,18 +29,40 @@
             </nav>
         </header>
         <main>
-            <section class="profile-section">
-                <div class="container">
-                    <div class="profile-content">
-                        <img src="/images/foto_katherine_alzamora.jpg" alt="Katherine" class="profile-img">
-                        <div class="text-content">
-                            <span class="greeting">Hola!</span>
-                            <h1>Me llamo <span class="name">Katherine</span>,<br>Soy Desarrolladora web</h1>
-                            <a href="cv.pdf" download class="download-btn">Descargar CV</a>
+            <div class="container-contact">
+                <section class="contact-section">
+                    <div class="contact-content">
+                        <h1 class="contact-title">Contacto</h1>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nombre:</label>
+                                <input type="text" id="name" name="name" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Mensaje:</label>
+                                <textarea id="message" name="message" rows="4" required class="form-textarea"></textarea>
+                            </div>
+                            <input type="checkbox" id="submitCheckbox" class="hidden" />
+                            <label for="submitCheckbox" class="download-btn">Enviar</label>
+                            <div class="success-message">¡Mensaje enviado con éxito!</div>
+                        </form>
+                        <div class="contact-info">
+                            <p>Correo electrónico: <a href="mailto:katherine.alzamora@gmail.com" class="contact-link">katherine.alzamora@gmail.com</a></p>
+                            <p>Teléfono: +54 9 1122334455</p>
                         </div>
                     </div>
-                </div>
-            </section>
+                    <div>
+                        <img src="/images/contact.webp" alt="Foto de cartas" class="contact-image">
+                    </div>
+                </section>
+                <section class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16779148.807631804!2d-74.06544745753528!3d-37.09781136831205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1sen!2sus!4v1682439129158!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </div>
         </main>
         <footer>
             <section>
